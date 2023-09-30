@@ -2,6 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:ui1/screens/call_expert/view/call_screen.dart';
+import 'package:ui1/screens/profile/view/profile_screen.dart';
+import 'package:ui1/screens/second/view/second_screen.dart';
+import 'package:ui1/screens/update_screen/view/update_screen.dart';
+import 'package:ui1/screens/videos/view/videos_screen.dart';
 
 class FourthScreen extends StatefulWidget {
   const FourthScreen({Key? key}) : super(key: key);
@@ -25,6 +30,8 @@ class _FourthScreenState extends State<FourthScreen> {
     "Change Language",
     "Learning Videos"
   ];
+
+  List Screens = ['/update','/call','profile','second','/videos'];
 
   @override
   Widget build(BuildContext context) {
@@ -54,10 +61,9 @@ class _FourthScreenState extends State<FourthScreen> {
                 itemBuilder: (context, index) {
                   return InkWell(
                     onTap: () {
-                      Get.toNamed('/update');
+                      Get.toNamed('${Screens[index]}');
                     },
                     child: Container(
-                      // alignment: Alignment.center,
                       margin: EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),

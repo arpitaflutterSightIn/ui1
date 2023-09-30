@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     Timer(Duration(seconds: 3), () {
-      Get.toNamed('/fourth');
+      Get.offAndToNamed('/logo');
     });
     return SafeArea(
       child: Scaffold(
