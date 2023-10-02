@@ -67,7 +67,7 @@ class _FourthScreenState extends State<FourthScreen> {
                       margin: EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Colors.red.shade50,
+                        color: Color(0xffF3EDF7),
                         border: Border.all(color: Colors.grey.shade400),
                       ),
                       child: Center(
